@@ -15,7 +15,7 @@
 			<legend>
 				<strong>Text</strong>
 			</legend>
-			<textarea rows = "4" cols= "30">
+			<textarea rows = "4" cols= "30" id="TextField">
 			</textarea>
 		</fieldset>
 		
@@ -24,14 +24,15 @@
 				<strong>Fancify</strong>
 			</legend>
 			<div>
-			<input type="radio" name="type" id="Fancy" value="fancy"/>
+			<input type="radio" name="fancify" id="Fancy" value="fancy" onchange="toggleFancify(value)"/>
 			<label for="Fancy">FancySchmancy</label>
 
-			<input type="radio" name="type" id="Boring" value="boring"/>
+			<input type="radio" name="fancify" id="Boring" value="boring" checked onchange="toggleFancify(value)"/>
 			<label for="Boring">BoringBetty</label>
 			</div>
 			
-			<button type= "button" id="Bigger">Bigger!</button>
+			<button type= "button" id="Bigger" onclick="enlargeText()">Bigger!</button>
+			<button type= "button" id="Moo" onclick="addMoo()">Moo?</button>
 		</fieldset>
 
 	</body>
